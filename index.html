@@ -1,12 +1,36 @@
 <!doctype html>
 <html>
 <head>
-<meta charset="UTF-8">
-<title>Inicio</title>
-<link href="css/style.css" rel="stylesheet" type="text/css">
+    <meta charset="UTF-8">
+    <title>Inicio</title>
+    <link href="css/style.css" rel="stylesheet" type="text/css">
 </head>
 <body>
-<!-- JAVASCRIPT es preferible como ultima linea en el body -->
-<script type="text/javascript" src="js/main.js"></script>
-</body>
-</html>
+    <form>
+        <p align="center">Seleccione un Pokemon<p align="center"><select name="Pokemones">
+            <option value="Pikachu">Pikachu</option>
+            <option value="Metapod">Metapod</option>
+            <option value="Bulbasaur">Bulbasaur</option>
+        </select>
+
+    </form>
+    <form>
+        <p align="center"><select name="Pokemones">
+            <option value="Charmander">Charmander</option>
+            <option value="Squirtle">Squirtle</option>
+            <option value="Charmeleon">Charmeleon</option>
+        </select>
+    </form>
+    <div class="row">
+        <div class="boton"> </div>
+        <button type="button" value="Pelear" onclick="function pelear()">Pelear!</button>
+        
+
+     <div id="verPokemon"></div>
+
+
+
+        <!-- JAVASCRIPT es preferible como ultima linea en el body -->
+        <script type="text/javascript" src="js/main.js"></script>
+    </body>
+    </html>

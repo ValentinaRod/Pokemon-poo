@@ -22,3 +22,19 @@ console.log(Charmander.vida)
 console.log(Pikachu.nombre + Pikachu.color + Pikachu.vida)
 document.write("<h2><b>" + Charmander.nombre + " </b>" + Charmander.color + " " + Charmander.vida + "</h2>")
 document.write("<h2><b>" + Pikachu.nombre + " </b>" + Pikachu.color + " " + Pikachu.vida + "</h2>")
+
+
+function pelear(){
+	
+	var poke1 = document.getElementById("poke1").value;
+	var poke2 = document.getElementById("poke2").value;
+	var pokemon1= new Pokemon(poke1,"amarillo",math.floor(math.random(0,100)*101));
+	var pokemon2= new Pokemon(poke2,"rojo",20);
+
+	document.write(pokemon1.atacar(pokemon2));
+
+	var resultado= document.getElementById("verPokemon");
+	resultado.innerHTML = Alert(pokemon1.nombre + "ataco a" + pokemon2.nombre );
+}
+
+	
