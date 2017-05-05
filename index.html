@@ -1,36 +1,49 @@
-<!doctype html>
+<!DOCTYPE html>
 <html>
+<meta charset="utf-8">
 <head>
-    <meta charset="UTF-8">
-    <title>Inicio</title>
-    <link href="css/style.css" rel="stylesheet" type="text/css">
+  <title>Pokemón</title>
 </head>
-<body>
-    <form>
-        <p align="center">Seleccione un Pokemon<p align="center"><select name="Pokemones">
-            <option value="Pikachu">Pikachu</option>
-            <option value="Metapod">Metapod</option>
-            <option value="Bulbasaur">Bulbasaur</option>
-        </select>
+ <body align: left>
+  <div>
+      <p id = "poke" >  </p>  
+<div align="left"><img src="assets/img/images.png" width="245" height="90"></div>
+<div align="right"><img src="assets/img/images.png" width="245" height="90"></div>
 
-    </form>
-    <form>
-        <p align="center"><select name="Pokemones">
-            <option value="Charmander">Charmander</option>
-            <option value="Squirtle">Squirtle</option>
-            <option value="Charmeleon">Charmeleon</option>
-        </select>
-    </form>
-    <div class="row">
-        <div class="boton"> </div>
-        <button type="button" value="Pelear" onclick="function pelear()">Pelear!</button>
-        
+  </div>
 
-     <div id="verPokemon"></div>
+  <center>
+  
+    <h4>  Ya puedes eligir a tu Pokemón </h4>
+
+   <select name="poke1" id="poke1">
+      <option value="Pikachu">Pikachu</option>
+      <option value="Charmander">Charmander</option>
+      <option value="Metapod">Metapod</option>
+      <option value="Miau">Miau</option>
+  </select>
+
+  <select name="poke2" ="" id="poke2">
+      <option value="Pikachu">Pikachu</option>
+      <option value="Charmander">Charmander</option>
+      <option value="Metapod">Metapod</option>
+      <option value="Psyduck">Psyduck</option>
+  </select>
+
+ <p> Batalla </p>
+
+  <button onclick="luchar()"> Lucha </button>
+  <br>
+  <div id="pokemoncillos"><br>
+
+  </div>
+  <br>
+<div align="center"><img src="assets/img/01f7886a6458eb2f9128630f34e882a1.png" width="245" height="200"></div>
+
+</center>
 
 
 
-        <!-- JAVASCRIPT es preferible como ultima linea en el body -->
-        <script type="text/javascript" src="js/main.js"></script>
-    </body>
-    </html>
+<script src="assets/js/main.js"></script>
+</body>
+</html>
